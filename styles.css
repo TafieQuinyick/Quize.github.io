@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#progress {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+
+.quiz-content {
+    margin-bottom: 1.5rem;
+}
+
+#question {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.choices {
+    display: grid;
+    gap: 1rem;
+}
+
+.choice {
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    background-color: #f8f9fa;
+    border-color: #007bff;
+}
+
+.choice.correct {
+    background-color: #d4edda;
+    border-color: #28a745;
+}
+
+.choice.wrong {
+    background-color: #f8d7da;
+    border-color: #dc3545;
+}
+
+.feedback {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feedback.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.feedback.wrong {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    text-align: center;
+}
+
+#result h2 {
+    margin-bottom: 1rem;
+}
+
+#result p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.fade {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+} 
